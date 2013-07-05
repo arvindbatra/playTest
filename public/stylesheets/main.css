@@ -1,0 +1,241 @@
+html,
+body {
+  height: 100%;
+}
+.row-rounded-corners {
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  border-radius: 20px;
+  border: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background-color: #FFFFFF;
+}
+
+.interests-wrapper {
+  /*height: 300px; */
+  padding-top: 15px;
+  /*overflow: auto;*/
+  
+}
+
+
+.social-share-icon {
+  padding-right:3px;
+  height:18px;
+}
+
+.preview-element {
+  /* taken from form-actions*/
+  padding: 19px 20px 20px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+  *zoom: 1;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.interest-element {
+  margin-left: 0;
+  padding: 3px 15px;
+  line-height: 20px;
+  text-rendering: optimizelegibility;
+  font-size: 14px;
+  list-style: none;
+  display: inline;
+  text-transform: capitalize;
+}
+.superscript { 
+  position: relative; 
+  top: -0.5em; 
+  font-size: 80%; 
+}
+
+.imageClip{
+    width=100px;
+    height=100px;
+    overflow:hidden;
+}
+
+.right-border {
+  padding: 5px;
+  border-right: 1px solid #e3e3e3;
+}
+.down-border {
+  padding-bottom: 2px;
+  margin-bottom: : 5px;
+  border-bottom: 1px dotted #e3e3e3;
+}
+
+
+.ie-title {
+  font-size: 24.5px;
+  font-weight: bold;
+  line-height: 25px;
+  text-transform:capitalize;
+  text-rendering: optimizelegibility;
+}
+
+
+ebh3 {
+  font-size: 20px;
+  font-family: inherit;
+  font-weight: bold;
+  line-height: 22px;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
+
+ebh4 {
+  font-size: 17.5px;
+  margin: 5px 0;
+  font-family: inherit;
+  font-weight: bold;
+  line-height: 20px;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
+
+ebh5 {
+  font-size: 14px;
+  margin: 5px 0;
+  font-family: inherit;
+  font-weight: bold;
+  line-height: 16px;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
+
+e3-title {
+  font-size: 15px;
+  margin: 2px 0;
+  font-family: inherit;
+  font-weight: bold;
+  line-height: 16px;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
+
+hrlm {
+  margin: 10px 0;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #ffffff;
+}
+
+.space-with-border {
+  margin-top: 15px;
+  display:inline-block;
+  
+  border-bottom: 2px solid #000000;
+  }
+
+
+
+
+
+
+.break-word {
+  word-wrap: break-word;
+}
+
+.image-fixed {
+  float:left;
+  width:100px;
+  height:100px;
+  padding-right: 5px;
+}
+
+.image-fixed2 {
+  float:left;
+  width:80px;
+  height:80px;
+  padding-right: 5px;
+}
+
+
+
+.eb-tags {
+  overflow:hidden;
+   width:100%
+  padding: 5px 10px;
+  margin: 0 0 10px;
+  list-style: none;
+  background-color: #f5f5f5;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.eb-tags > li {
+  display: inline-block;
+  *display: inline;
+  text-shadow: 0 1px 0 #ffffff;
+  *zoom: 1;
+}
+
+.eb-tags > li > .divider {
+  padding: 0 5px;
+  color: #ccc;
+}
+
+.eb-tags > .active {
+  color: #999999;
+}
+
+.close-image{
+    display: block;
+    float:right;
+    position:relative;
+    top:-10px;
+    right: -10px;
+    height: 20px;
+}
+
+.follow-btn-custom {
+  background-color: hsl(108, 100%, 65%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c1ffb2", endColorstr="#70fe4c");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#c1ffb2), to(#70fe4c));
+  background-image: -moz-linear-gradient(top, #c1ffb2, #70fe4c);
+  background-image: -ms-linear-gradient(top, #c1ffb2, #70fe4c);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c1ffb2), color-stop(100%, #70fe4c));
+  background-image: -webkit-linear-gradient(top, #c1ffb2, #70fe4c);
+  background-image: -o-linear-gradient(top, #c1ffb2, #70fe4c);
+  background-image: linear-gradient(#c1ffb2, #70fe4c);
+  border-color: #70fe4c #70fe4c hsl(108, 100%, 60%);
+  color: #333 !important;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.33);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  /*margin: 0 auto -60px;*/
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+  margin-top:10px;
+  height: 60px;
+}
+#footer {
+  background-color: #f5f5f5;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
