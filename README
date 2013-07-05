@@ -1,4 +1,21 @@
 This is your new Play 2.1 application
 =====================================
 
-This file will be packaged with your application, when using `play dist`.
+This small app highlights Play Frameowork (2.1.1) ClosedChannelException.
+
+Steps to reproduce - 
+(a) Start the server (Say on localhost:9000)
+(b)Go to http://localhost:9000/iform.
+(c) Enter some string  in the text box. Submit by clicking on the Add Button.
+(d) An alert saying error should come. THe following messages are seen in logs (TRACE):
+
+[debug] play - java.nio.channels.ClosedChannelException
+[trace] application - Exception caught in Netty
+java.nio.channels.ClosedChannelException: null
+  at org.jboss.netty.channel.socket.nio.AbstractNioWorker.cleanUpWriteBuffer(AbstractNioWorker.java:409) ~[netty.jar:na]
+  at org.jboss.netty.channel.socket.nio.AbstractNioWorker.writeFromUserCode(AbstractNioWorker.java:127) ~[netty.jar:na]
+  at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.handleAcceptedSocket(NioServerSocketPipelineSink.java:99) ~[netty.jar:na]
+  at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.eventSunk(NioServerSocketPipelineSink.java:36) ~[netty.jar:na]
+  at org.jboss.netty.channel.Channels.write(Channels.java:725) ~[netty.jar:na]
+  at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.doEncode(OneToOneEncoder.java:71) ~[netty.jar:na]
+[trace] play - Http request received by netty: DefaultHttpRequest(chunked: false)
